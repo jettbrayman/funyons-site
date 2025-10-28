@@ -1,0 +1,121 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+  background: #fdf0d5;
+  color: #003049;
+}
+
+header {
+  background-color: #780000;
+  padding: 10px;
+  text-align: center;
+  color: #fdf0d5;
+}
+
+nav {
+  margin-top: 8px;
+}
+
+nav a {
+  display: block; /*makes the nav stack vertically*/
+  margin: 4px 0;
+  text-decoration: none;
+  color: #fdf0d5;
+}
+nav a:hover {
+  background-color: #c1121f;
+}
+section {
+  padding: 16px;
+  border-bottom: 1px solid white;
+}
+
+section img {
+  width: 70%;
+  height: auto;
+  margin-top: 16px;
+}
+
+footer {
+  background-color: #669bbc;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+@media (min-width: 576px) {
+  /*once it reaches 576px it applies this style more importance than previous style*/
+  nav {
+    text-align: center; /*this makes text stack instead of right to left*/
+  }
+
+  nav a {
+    display: inline-block; /*makes items side by side*/
+    margin: 0 16px;
+  }
+
+  section {
+    padding: 32px;
+  }
+
+  section img {
+    max-width: 80%;
+    display: block; /*makes img stack vertically with other elements*/
+    margin: 16px auto;
+  }
+}
+
+@media (min-width: 720px) {
+  /*once it reaches 720ppx it applies this style more importance than previous style*/
+  body {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  section {
+    border: 1px solid #000000;
+    margin: 32px auto;
+    width: 80%;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+  section img {
+    width: 90%;
+  }
+}
+
+@media (min-width: 992px) {
+  /*once it reaches 992px it applies this style more importance than previous style*/
+  main {
+    display: flow-root;
+  }
+
+  section {
+    width: 40%;
+    float: left;
+    margin: 3%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /*adds a .5 transparency to box shadow to add change to the styling*/
+    background: white;
+  }
+
+  header {
+    text-align: left;
+    padding: 32px;
+  }
+
+  nav {
+    text-align: right;
+    margin-top: -40px;
+  }
+
+  section img {
+    width: 100%;
+  }
+}
